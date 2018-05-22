@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/KaijuAttack.iml" filepath="$PROJECT_DIR$/.idea/modules/KaijuAttack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KaijuAttack_main.iml" filepath="$PROJECT_DIR$/.idea/modules/KaijuAttack_main.iml" group="KaijuAttack" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/KaijuAttack_test.iml" filepath="$PROJECT_DIR$/.idea/modules/KaijuAttack_test.iml" group="KaijuAttack" />
     </modules>
   </component>
 </project>
