@@ -13,7 +13,8 @@ public class KaijuTest {
 
     @Before
     public void setup(){
-        kaiju = new Godzilla(100, 100);
+        kaiju = Godzilla.getInstance();
+        kaiju.restoreHealth();
     }
 
     @Test

@@ -10,7 +10,7 @@ public class GodzillaTest {
 
     @Before
     public void setup(){
-        godzilla = new Godzilla(100, 100);
+        godzilla = Godzilla.getInstance();
     }
 
     @Test

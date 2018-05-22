@@ -2,8 +2,14 @@ package kaiju;
 
 public class Godzilla extends Kaiju{
 
-    public Godzilla(int attackValue, int healthValue){
+    private static final Godzilla instance = new Godzilla(100, 100);
+
+    private Godzilla(int attackValue, int healthValue){
         super("Godzilla", attackValue, healthValue);
+    }
+
+    public static Godzilla getInstance(){
+        return instance;
     }
 
     @Override

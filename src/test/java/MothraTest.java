@@ -10,7 +10,8 @@ public class MothraTest {
 
     @Before
     public void setup(){
-        mothra = new Mothra(100, 100);
+        mothra = Mothra.getInstance();
+        mothra.restoreHealth();
     }
 
     @Test

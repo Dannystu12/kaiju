@@ -8,12 +8,14 @@ public abstract class Kaiju implements Attackable, IAttack{
     private String name;
     private int attackValue;
     private int healthValue;
+    private final int INITIAL_HEALTH;
 
 
     public Kaiju(String name, int attackValue, int healthValue){
         this.name = name;
         this.attackValue = attackValue;
         this.healthValue = healthValue;
+        INITIAL_HEALTH = healthValue;
     }
 
     public String getName() {
@@ -50,5 +52,9 @@ public abstract class Kaiju implements Attackable, IAttack{
     @Override
     public boolean isDead(){
         return healthValue <= 0;
+    }
+
+    public void restoreHealth(){
+        this.healthValue = INITIAL_HEALTH;
     }
 }

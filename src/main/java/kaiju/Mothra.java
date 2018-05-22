@@ -1,10 +1,16 @@
 package kaiju;
 
 public class Mothra extends Kaiju {
-    public Mothra(int attackValue, int healthValue){
+
+    private static final Mothra instance = new Mothra(100, 100);
+
+    private Mothra(int attackValue, int healthValue){
         super("Mothra", attackValue, healthValue);
     }
 
+    public static Mothra getInstance(){
+        return instance;
+    }
 
     @Override
     public String roar() {
